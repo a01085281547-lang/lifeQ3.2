@@ -1,0 +1,15 @@
+[build]
+  publish = "site"
+  functions = "netlify/functions"
+
+[[redirects]]
+  from = "/api/generate-event"
+  to = "/.netlify/functions/generate-event"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/analyze-choice"
+  to = "/.netlify/functions/analyze-choice"
+  status = 200
+  force = true
